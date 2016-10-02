@@ -2,25 +2,21 @@
 <html>
   <head>
     <title>Mystore</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'https://js.braintreegateway.com/js/braintree-2.24.0.min.js' %>
     <%= csrf_meta_tags %>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300' rel='stylesheet' type='text/css'>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <!--[Jerry] add from template ++++++ -->
       <%= render 'shared/header'%>
-
     	<div class="main-container">
         <%= yield %>
         <%= render 'shared/footer'%>
-
     	</div><!-- /.main-container -->
-
-
-  <!--[Jerry] add from template END -->
-
-
+    <!--[Jerry] add from template END -->
 </body>
 </html>
