@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
+//[Jerry] add for bootstrap, ref: https://github.com/twbs/bootstrap-sass
+//= require bootstrap-sprockets
 //= require_tree .

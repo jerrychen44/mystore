@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ //[Jerry] install bootstrap, ref: https://github.com/twbs/bootstrap-sass
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
