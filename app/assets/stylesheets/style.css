@@ -88,11 +88,12 @@ header.secondary.small .parallax-background {
   background-size: cover !important;
   z-index: 0;
 }
-
+/*add by mysefl for testing the postion of bg-2*/
+/*
 .background-image-holder.overlay {
   background-position: 50% 40%;
 }
-
+*/
 .background-image-holder.on-page {
   background-position: 50% 50% !important;
 }
