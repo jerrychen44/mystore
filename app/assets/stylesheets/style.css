@@ -89,6 +89,10 @@ header.secondary.small .parallax-background {
   z-index: 0;
 }
 
+.background-image-holder.overlay {
+  background-position: 50% 40%;
+}
+
 .background-image-holder.on-page {
   background-position: 50% 50% !important;
 }
