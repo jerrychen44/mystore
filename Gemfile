@@ -22,6 +22,13 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
 gem 'paperclip'
+
+#ref:https://github.com/activeadmin/activeadmin
+gem 'activeadmin', github: 'activeadmin'
+#follow the page, for rails 5
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+#ref:https://github.com/plataformatec/devise
+gem 'devise'
 #[Jerry]---------
 
 
