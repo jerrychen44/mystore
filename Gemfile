@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.2'
 #ref: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
-gem "paperclip"
+gem 'paperclip'
 #[Jerry]---------
 
 
