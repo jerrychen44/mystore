@@ -19,23 +19,25 @@
 
 
 
-<!--copy from catalog-list.html START -->
+<!--copy from catalog-list.html START, we will change to rails code, so copy only on product is enough -->
 <section class="product-list">
   <div class="container">
+    <% @product.each do |product|%>
     <div class="row">
       <div class="col-md-12">
         <div class="product">
           <div class="row">
             <div class="col-md-6 col-xs-12">
               <div class="thumbnail">
-                <img src="images/555x370.png" alt="">
+                <%= image_tag product.image %>
+                <!--<img src="images/555x370.png" alt="">-->
               </div>
             </div>
             <div class="col-md-5 col-md-offset-1">
               <div class="product-details">
-                <h2 class="product-title">Yellow chair</h2>
-                <p class="product-price">$90</p>
-                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptat et molestiae non.</p>
+                <h2 class="product-title"><%= product.title %></h2>
+                <p class="product-price"><%= number_to_currency product.price %></p>
+                <p><%= product.description %></p>
 
                 <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to cart</a>
               </div>
@@ -44,6 +46,7 @@
         </div>
       </div>
     </div><!-- /.row -->
+    <% end %>
 <!--copy from catalog-list.html END -->
   </div> <!--container-->
 </section> <!--product-list ,add above two end by ourown-->
