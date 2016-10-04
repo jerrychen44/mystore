@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   #[Jerry] add for store page
   get 'shop' => 'pages#shop'
 
+  #[Jerry] add for we create the cart model by oursefl
+  resources :carts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
