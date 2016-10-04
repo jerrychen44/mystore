@@ -23,29 +23,29 @@
 <section class="product-list">
   <div class="container">
     <% @product.each do |product|%>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="product">
-          <div class="row">
-            <div class="col-md-6 col-xs-12">
-              <div class="thumbnail">
-                <%= image_tag product.image %>
-                <!--<img src="images/555x370.png" alt="">-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="product">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <div class="thumbnail">
+                  <%= image_tag product.image %>
+                  <!--<img src="images/555x370.png" alt="">-->
+                </div>
               </div>
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-              <div class="product-details">
-                <h2 class="product-title"><%= product.title %></h2>
-                <p class="product-price"><%= number_to_currency product.price %></p>
-                <p><%= product.description %></p>
+              <div class="col-md-5 col-md-offset-1">
+                <div class="product-details">
+                  <h2 class="product-title"><%= product.title %></h2>
+                  <p class="product-price"><%= number_to_currency product.price %></p>
+                  <p><%= product.description %></p>
 
-                <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                  <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div><!-- /.row -->
+      </div><!-- /.row -->
     <% end %>
 <!--copy from catalog-list.html END -->
   </div> <!--container-->
