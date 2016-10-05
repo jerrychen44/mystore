@@ -26,6 +26,13 @@
 
     <div class="col-md-12"><!--put your product insdie-->
       <h2>Carts details</h2>
+      <!--after we add the cart model and ProductItem now we can implement it.-->
+      <br>
+      <% @cart.product_items.each do |item| %>
+      <ul>
+        <%= item.quantity %>&times;<%= item.title %>
+      </ui>
+      <% end %>
     </div>
 
 
