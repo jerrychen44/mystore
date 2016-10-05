@@ -15,4 +15,8 @@
 
 // [Jerry] add for bootstrap, ref: https://github.com/twbs/bootstrap-sass
 //= require bootstrap-sprockets
+// [Jerry] add for toaster
+//= require toastr
+
+
 //= require_tree .

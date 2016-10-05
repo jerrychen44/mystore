@@ -29,6 +29,9 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 #ref:https://github.com/plataformatec/devise
 gem 'devise'
+
+
+gem 'toastr-rails'
 #[Jerry]---------
 
 
