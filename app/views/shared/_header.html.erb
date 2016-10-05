@@ -68,8 +68,15 @@
                   <% end %>
                 </li>
                 <li>
-                  <%= link_to root_path, class: 'menu-cart' do  %>
-                    <i class="fa fa-shopping-cart"></i> $0.00
+                  <!--since we have total_price can use, we change to rails style-->
+                  <% if @cart.total_price > 0 %>
+                    <%= link_to root_path, class: 'menu-cart' do  %>
+                      <i class="fa fa-shopping-cart"></i>
+                      <%= number_to_currency @cart.total_price %>
+                    <% end %>
+                  <% else %>
+                    <!-- copy from template index.html, just shows the 0-->
+                    <a href="#" class="menu-cart"><i class="fa fa-shopping-cart"></i> $0.00</a>
                   <% end %>
                 </li>
               </ul>
