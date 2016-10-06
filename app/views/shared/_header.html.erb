@@ -70,7 +70,8 @@
                 <li>
                   <!--since we have total_price can use, we change to rails style-->
                   <% if @cart.total_price > 0 %>
-                    <%= link_to root_path, class: 'menu-cart' do  %>
+                      <!--<%#= link_to @cart, class: 'menu-cart' do  %>-->
+                    <%= link_to cart_path(:id => @cart.id), class: 'menu-cart' do  %>
                       <i class="fa fa-shopping-cart"></i>
                       <%= number_to_currency @cart.total_price %>
                     <% end %>

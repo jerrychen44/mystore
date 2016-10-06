@@ -29,10 +29,10 @@
       <!--after we add the cart model and ProductItem now we can implement it.-->
       <br>
       <!--move to partial _cart.html.erb-->
-      <%= render 'carts/cart'%>
+      <%= render 'carts/cart' %>
       <br>
       <!--we will implement total_price method to cart model-->
-      <h5>Total: <%= number_to_currency @cart.total_price %></h5>
+      <h5>Total price: <%= number_to_currency @cart.total_price %></h5>
       <br>
       <%= link_to 'Back to Store', shop_path %>
       <br>

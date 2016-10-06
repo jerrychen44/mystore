@@ -17,6 +17,4 @@
 //= require bootstrap-sprockets
 // [Jerry] add for toaster
 //= require toastr
-
-
 //= require_tree .

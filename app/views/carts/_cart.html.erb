@@ -1,6 +1,7 @@
 <% @cart.product_items.each do |item| %>
   <ul>
-    <%= item.quantity %>&times;<%= item.title %>
-    <%= number_to_currency item.total_price %>
+      <li>
+        <%= item.quantity %>&times;<%= item.product.title %>: <%= number_to_currency item.total_price %>
+      </li>
   </ui>
 <% end %>
